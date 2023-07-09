@@ -14,3 +14,5 @@ Imports:
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: https://github.com/DavidJMartinezS/rconsul
+BugReports: https://github.com/DavidJMartinezS/rconsul/issues
