@@ -9,7 +9,14 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     dplyr,
+    magrittr,
+    openxlsx,
+    purrr,
+    rvest,
     sf,
+    stringr,
+    tibble,
+    tidyr,
     units
 Depends: 
     R (>= 2.10)
