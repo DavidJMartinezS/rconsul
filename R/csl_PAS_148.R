@@ -53,7 +53,7 @@ cart_PAS_148 <- function(predios, BN.intervenir, formaciones, suelo=NULL, cut.x.
   if (is.null(dem)) {
     dem_stars <- elevatr::get_elev_raster(sf::st_buffer(predios,100) %>% sf::st_transform(4326), source = "ALOS_PALSAR", z = 12) %>%
       raster::projectRaster(crs=32719) %>%
-      sf::st_as_stars() %>%
+      stars::st_as_stars() %>%
       `names<-`("elev")
   } else {
     dem_stars <- stars::st_as_stars(dem) %>% `names<-`("elev") %>% .[sf::st_buffer(predio.shp,1000)]
